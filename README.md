@@ -50,82 +50,82 @@ This toolkit handles **ALL 50 markdownlint rules**:
 
 ### ✅ Heading Rules (MD001-MD025)
 
-| Rule | Description | Auto-Fix |
-|------|-------------|----------|
-| MD001 | Heading levels increment | ✅ |
-| MD003 | Heading style | ✅ |
-| MD018 | No space after hash | ✅ |
-| MD019 | Multiple spaces after hash | ✅ |
-| MD020 | No space inside hashes (closed) | ✅ |
-| MD021 | Multiple spaces in closed hashes | ✅ |
-| MD022 | Headings surrounded by blank lines | ✅ |
-| MD023 | Headings must start at line beginning | ✅ |
-| MD024 | No duplicate heading content | Config |
-| MD025 | Single top-level heading | Manual |
-| MD026 | No trailing punctuation in heading | ✅ |
+| Rule  | Description                           | Auto-Fix |
+| ----- | ------------------------------------- | -------- |
+| MD001 | Heading levels increment              | ✅       |
+| MD003 | Heading style                         | ✅       |
+| MD018 | No space after hash                   | ✅       |
+| MD019 | Multiple spaces after hash            | ✅       |
+| MD020 | No space inside hashes (closed)       | ✅       |
+| MD021 | Multiple spaces in closed hashes      | ✅       |
+| MD022 | Headings surrounded by blank lines    | ✅       |
+| MD023 | Headings must start at line beginning | ✅       |
+| MD024 | No duplicate heading content          | Config   |
+| MD025 | Single top-level heading              | Manual   |
+| MD026 | No trailing punctuation in heading    | ✅       |
 
 ### ✅ List Rules (MD004-MD007, MD029-MD032)
 
-| Rule | Description | Auto-Fix |
-|------|-------------|----------|
-| MD004 | Unordered list style | ✅ |
-| MD005 | Consistent list indentation | ✅ |
-| MD007 | Unordered list indentation | ✅ |
-| MD029 | Ordered list item prefix | Config |
-| MD030 | Spaces after list markers | ✅ |
-| MD032 | Lists surrounded by blank lines | ✅ |
+| Rule  | Description                     | Auto-Fix |
+| ----- | ------------------------------- | -------- |
+| MD004 | Unordered list style            | ✅       |
+| MD005 | Consistent list indentation     | ✅       |
+| MD007 | Unordered list indentation      | ✅       |
+| MD029 | Ordered list item prefix        | Config   |
+| MD030 | Spaces after list markers       | ✅       |
+| MD032 | Lists surrounded by blank lines | ✅       |
 
 ### ✅ Whitespace Rules (MD009-MD012)
 
-| Rule | Description | Auto-Fix |
-|------|-------------|----------|
-| MD009 | No trailing spaces | ✅ |
-| MD010 | No hard tabs | ✅ |
-| MD011 | Reversed link syntax | ✅ |
-| MD012 | No multiple consecutive blank lines | ✅ |
+| Rule  | Description                         | Auto-Fix |
+| ----- | ----------------------------------- | -------- |
+| MD009 | No trailing spaces                  | ✅       |
+| MD010 | No hard tabs                        | ✅       |
+| MD011 | Reversed link syntax                | ✅       |
+| MD012 | No multiple consecutive blank lines | ✅       |
 
 ### ✅ Code Block Rules (MD014, MD031, MD040, MD046, MD048)
 
-| Rule | Description | Auto-Fix |
-|------|-------------|----------|
-| MD014 | Dollar signs in shell commands | ✅ |
-| MD031 | Fenced code blocks surrounded by blanks | ✅ |
-| MD040 | Fenced code blocks have language | ✅ |
-| MD046 | Code block style | Config |
-| MD048 | Code fence style | Config |
+| Rule  | Description                             | Auto-Fix |
+| ----- | --------------------------------------- | -------- |
+| MD014 | Dollar signs in shell commands          | ✅       |
+| MD031 | Fenced code blocks surrounded by blanks | ✅       |
+| MD040 | Fenced code blocks have language        | ✅       |
+| MD046 | Code block style                        | Config   |
+| MD048 | Code fence style                        | Config   |
 
 ### ✅ Emphasis & Links (MD033-MD039, MD042, MD045)
 
-| Rule | Description | Auto-Fix |
-|------|-------------|----------|
-| MD033 | No inline HTML | Config |
-| MD034 | No bare URLs | ✅ |
-| MD036 | Emphasis instead of heading | ✅ |
-| MD037 | No spaces inside emphasis | ✅ |
-| MD038 | No spaces inside code spans | ✅ |
-| MD039 | No spaces inside link text | ✅ |
-| MD042 | No empty links | ✅ |
-| MD045 | Images have alt text | ✅ |
+| Rule  | Description                 | Auto-Fix |
+| ----- | --------------------------- | -------- |
+| MD033 | No inline HTML              | Config   |
+| MD034 | No bare URLs                | ✅       |
+| MD036 | Emphasis instead of heading | ✅       |
+| MD037 | No spaces inside emphasis   | ✅       |
+| MD038 | No spaces inside code spans | ✅       |
+| MD039 | No spaces inside link text  | ✅       |
+| MD042 | No empty links              | ✅       |
+| MD045 | Images have alt text        | ✅       |
 
 ### ✅ Blockquote Rules (MD027-MD028)
 
-| Rule | Description | Auto-Fix |
-|------|-------------|----------|
-| MD027 | Multiple spaces after blockquote | ✅ |
-| MD028 | Blank line inside blockquote | ✅ |
+| Rule  | Description                      | Auto-Fix |
+| ----- | -------------------------------- | -------- |
+| MD027 | Multiple spaces after blockquote | ✅       |
+| MD028 | Blank line inside blockquote     | ✅       |
 
 ### ✅ Other Rules
 
-| Rule | Description | Auto-Fix |
-|------|-------------|----------|
-| MD013 | Line length | Config |
-| MD035 | Horizontal rule style | Config |
-| MD041 | First line should be top heading | Config |
-| MD043 | Required heading structure | Manual |
-| MD044 | Proper names capitalization | ✅ |
-| MD047 | File ends with newline | ✅ |
-| MD049 | Emphasis style | Config |
-| MD050 | Strong style | Config |
+| Rule  | Description                      | Auto-Fix |
+| ----- | -------------------------------- | -------- |
+| MD013 | Line length                      | Config   |
+| MD035 | Horizontal rule style            | Config   |
+| MD041 | First line should be top heading | Config   |
+| MD043 | Required heading structure       | Manual   |
+| MD044 | Proper names capitalization      | ✅       |
+| MD047 | File ends with newline           | ✅       |
+| MD049 | Emphasis style                   | Config   |
+| MD050 | Strong style                     | Config   |
 
 ## 📝 Available Commands
 
@@ -201,10 +201,10 @@ Edit `.markdownlint.json` to adjust rules:
 
 ```json
 {
-  "MD013": false,  // Disable line length
-  "MD029": false,  // Allow any ordered list style
-  "MD033": false,  // Allow inline HTML
-  "MD041": false   // Don't require first line heading
+  "MD013": false, // Disable line length
+  "MD029": false, // Allow any ordered list style
+  "MD033": false, // Allow inline HTML
+  "MD041": false // Don't require first line heading
 }
 ```
 
