@@ -1,6 +1,6 @@
 # 📦 MarkdownLint Clean - Complete Linting Solution
 
-A comprehensive, portable markdown linting toolkit that handles **ALL markdownlint errors (MD001-MD050)**. Achieve 100% markdown compliance with automated fixes and pre-commit hooks.
+A comprehensive, portable markdown linting toolkit that handles **ALL markdownlint errors (MD001-MD050)**. Achieve markdown compliance with automated fixes and pre-commit hooks.
 
 ## 🚀 Quick Start
 
