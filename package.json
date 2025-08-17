@@ -1,0 +1,28 @@
+{
+  "name": "markdown-toolkit",
+  "version": "1.0.0",
+  "description": "Portable markdown linting setup for JavaScript/TypeScript projects",
+  "main": "setup.sh",
+  "scripts": {
+    "setup": "./setup.sh"
+  },
+  "keywords": [
+    "markdown",
+    "linting",
+    "markdownlint",
+    "documentation",
+    "lint-staged",
+    "husky",
+    "pre-commit"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com//markdown-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com//markdown-toolkit/issues"
+  },
+  "homepage": "https://github.com//markdown-toolkit#readme"
+}
