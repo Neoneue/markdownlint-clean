@@ -1,15 +1,22 @@
 {
-  "name": "markdown-toolkit",
+  "name": "@neoneue/markdown-toolkit",
   "version": "1.0.0",
-  "description": "Portable markdown linting setup for JavaScript/TypeScript projects - achieve 100% markdown compliance",
-  "main": "setup.sh",
+  "description": "Complete markdown linting toolkit - handles ALL 50 markdownlint errors with automated fixes and pre-commit hooks",
+  "main": "index.js",
+  "bin": {
+    "markdown-toolkit": "./bin/cli.js",
+    "md-setup": "./bin/setup.js",
+    "md-fix": "./bin/fix.js"
+  },
   "scripts": {
     "setup": "./setup.sh",
-    "fix": "./fix-markdown.sh",
+    "fix": "./fix-all-markdown-errors.sh",
     "lint:md": "markdownlint '**/*.md' --ignore node_modules --ignore .next",
     "lint:md:fix": "markdownlint '**/*.md' --ignore node_modules --ignore .next --fix",
     "format": "prettier --write '**/*.md'",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "npm run lint:md",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "markdown",
@@ -33,13 +40,29 @@
     "url": "https://github.com/Neoneue/markdown-toolkit/issues"
   },
   "homepage": "https://github.com/Neoneue/markdown-toolkit#readme",
-  "devDependencies": {
+  "dependencies": {
     "markdownlint-cli": "^0.43.0",
     "prettier": "^3.3.3",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.11"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "files": [
+    "bin/",
+    "index.js",
+    "setup.sh",
+    "fix-all-markdown-errors.sh",
+    "fix-markdown.sh",
+    ".markdownlint.json",
+    ".lintstagedrc.json",
+    "pre-commit",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }

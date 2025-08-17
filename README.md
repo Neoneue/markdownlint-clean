@@ -4,14 +4,39 @@ A comprehensive, portable markdown linting toolkit that handles **ALL markdownli
 
 ## 🚀 Quick Start
 
-### Option 1: Clone and Setup
+### Option 1: NPM Package (Recommended)
+
+```bash
+# Install globally
+npm install -g @neoneue/markdown-toolkit
+
+# Set up in your project
+cd your-project
+markdown-toolkit setup
+
+# Fix all markdown errors
+markdown-toolkit fix
+```
+
+### Option 2: Local Installation
+
+```bash
+# Install in project
+npm install --save-dev @neoneue/markdown-toolkit
+
+# Use via npx
+npx markdown-toolkit setup
+npx markdown-toolkit fix
+```
+
+### Option 3: Clone and Setup
 
 ```bash
 git clone https://github.com/Neoneue/markdown-toolkit.git
 ./markdown-toolkit/setup.sh
 ```
 
-### Option 2: One-Command Setup
+### Option 4: One-Command Setup
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/Neoneue/markdown-toolkit/main/setup.sh | bash
@@ -129,6 +154,21 @@ This toolkit handles **ALL 50 markdownlint rules**:
 
 ## 📝 Available Commands
 
+### CLI Commands (After npm install)
+
+```bash
+# Set up markdown linting in current project
+markdown-toolkit setup
+
+# Fix all markdown errors
+markdown-toolkit fix
+
+# Show help
+markdown-toolkit help
+```
+
+### Direct Scripts
+
 ```bash
 # Run comprehensive fix for ALL errors
 ./fix-all-markdown-errors.sh
@@ -144,6 +184,21 @@ npm run format
 
 # Run all fixes
 npm run fix:all
+```
+
+### Programmatic Usage
+
+```javascript
+const markdownToolkit = require('@neoneue/markdown-toolkit');
+
+// Set up in a project
+markdownToolkit.setup('/path/to/project');
+
+// Fix all errors
+markdownToolkit.fixAll('/path/to/project');
+
+// Run linting
+markdownToolkit.lint('/path/to/project', true); // true = auto-fix
 ```
 
 ## 🔧 Smart Features
