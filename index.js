@@ -1,5 +1,5 @@
 /**
- * Markdown Toolkit - Complete Linting Solution
+ * MarkdownLint Clean - Complete Linting Solution
  * 
  * A comprehensive toolkit for markdown linting that handles ALL 50 markdownlint errors.
  * Provides automated fixes, pre-commit hooks, and CI/CD integration.

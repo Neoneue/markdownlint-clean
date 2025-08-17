@@ -8,10 +8,10 @@ const packageDir = path.dirname(__dirname);
 
 function showHelp() {
   console.log(`
-📦 Markdown Toolkit - Complete Linting Solution
+📦 MarkdownLint Clean - Complete Linting Solution
 
 Usage:
-  markdown-toolkit <command> [options]
+  markdownlint-clean <command> [options]
 
 Commands:
   setup     Set up markdown linting in current project
@@ -19,10 +19,10 @@ Commands:
   help      Show this help message
 
 Examples:
-  markdown-toolkit setup    # Install and configure markdown linting
-  markdown-toolkit fix      # Fix all markdown errors
+  markdownlint-clean setup    # Install and configure markdown linting
+  markdownlint-clean fix      # Fix all markdown errors
 
-For more information: https://github.com/Neoneue/markdown-toolkit
+For more information: https://github.com/Neoneue/markdownlint-clean
 `);
 }
 
@@ -82,7 +82,7 @@ switch (command) {
   npm run lint:md:fix  - Auto-fix markdown issues
   
 🔧 To fix all errors now:
-  markdown-toolkit fix
+  markdownlint-clean fix
 `);
     break;
     

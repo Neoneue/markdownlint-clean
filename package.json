@@ -1,10 +1,10 @@
 {
-  "name": "@neoneue/markdown-toolkit",
+  "name": "markdownlint-clean",
   "version": "1.0.0",
   "description": "Complete markdown linting toolkit - handles ALL 50 markdownlint errors with automated fixes and pre-commit hooks",
   "main": "index.js",
   "bin": {
-    "markdown-toolkit": "./bin/cli.js",
+    "markdownlint-clean": "./bin/cli.js",
     "md-setup": "./bin/setup.js",
     "md-fix": "./bin/fix.js"
   },
@@ -34,12 +34,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Neoneue/markdown-toolkit.git"
+    "url": "git+https://github.com/Neoneue/markdownlint-clean.git"
   },
   "bugs": {
-    "url": "https://github.com/Neoneue/markdown-toolkit/issues"
+    "url": "https://github.com/Neoneue/markdownlint-clean/issues"
   },
-  "homepage": "https://github.com/Neoneue/markdown-toolkit#readme",
+  "homepage": "https://github.com/Neoneue/markdownlint-clean#readme",
   "dependencies": {
     "markdownlint-cli": "^0.43.0",
     "prettier": "^3.3.3",

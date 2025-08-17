@@ -1,4 +1,4 @@
-# 📦 Markdown Toolkit - Complete Linting Solution
+# 📦 MarkdownLint Clean - Complete Linting Solution
 
 A comprehensive, portable markdown linting toolkit that handles **ALL markdownlint errors (MD001-MD050)**. Achieve 100% markdown compliance with automated fixes and pre-commit hooks.
 
@@ -8,25 +8,25 @@ A comprehensive, portable markdown linting toolkit that handles **ALL markdownli
 
 ```bash
 # Install globally
-npm install -g @neoneue/markdown-toolkit
+npm install -g markdownlint-clean
 
 # Set up in your project
 cd your-project
-markdown-toolkit setup
+markdownlint-clean setup
 
 # Fix all markdown errors
-markdown-toolkit fix
+markdownlint-clean fix
 ```
 
 ### Option 2: Local Installation
 
 ```bash
 # Install in project
-npm install --save-dev @neoneue/markdown-toolkit
+npm install --save-dev markdownlint-clean
 
 # Use via npx
-npx markdown-toolkit setup
-npx markdown-toolkit fix
+npx markdownlint-clean setup
+npx markdownlint-clean fix
 ```
 
 ### Option 3: Clone and Setup
@@ -158,13 +158,13 @@ This toolkit handles **ALL 50 markdownlint rules**:
 
 ```bash
 # Set up markdown linting in current project
-markdown-toolkit setup
+markdownlint-clean setup
 
 # Fix all markdown errors
-markdown-toolkit fix
+markdownlint-clean fix
 
 # Show help
-markdown-toolkit help
+markdownlint-clean help
 ```
 
 ### Direct Scripts
@@ -189,16 +189,16 @@ npm run fix:all
 ### Programmatic Usage
 
 ```javascript
-const markdownToolkit = require('@neoneue/markdown-toolkit');
+const markdownlintClean = require('markdownlint-clean');
 
 // Set up in a project
-markdownToolkit.setup('/path/to/project');
+markdownlintClean.setup('/path/to/project');
 
 // Fix all errors
-markdownToolkit.fixAll('/path/to/project');
+markdownlintClean.fixAll('/path/to/project');
 
 // Run linting
-markdownToolkit.lint('/path/to/project', true); // true = auto-fix
+markdownlintClean.lint('/path/to/project', true); // true = auto-fix
 ```
 
 ## 🔧 Smart Features
@@ -283,7 +283,7 @@ The toolkit includes GitHub Actions workflow for automated testing:
 
 ## 📚 Resources
 
-- [GitHub Repository](https://github.com/Neoneue/markdown-toolkit)
+- [GitHub Repository](https://github.com/Neoneue/markdownlint-clean)
 - [Markdownlint Rules](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md)
 - [CommonMark Spec](https://commonmark.org/)
 - [GitHub Flavored Markdown](https://github.github.com/gfm/)
