@@ -22,7 +22,9 @@ curl -sSL https://raw.githubusercontent.com/Neoneue/markdown-toolkit/main/setup.
 ### 🔧 Fix Scripts
 
 #### `fix-all-markdown-errors.sh` - **NEW! Handles ALL Errors**
+
 Comprehensive script that fixes **ALL markdownlint errors (MD001-MD050)**:
+
 - Automatically detects and fixes 40+ different error types
 - Smart language detection for code blocks
 - Proper name capitalization
@@ -31,6 +33,7 @@ Comprehensive script that fixes **ALL markdownlint errors (MD001-MD050)**:
 - And much more!
 
 #### `fix-markdown.sh` - Original Fix Script
+
 Focused fixes for the most common issues
 
 ### 📁 Configuration Files
@@ -46,6 +49,7 @@ Focused fixes for the most common issues
 This toolkit handles **ALL 50 markdownlint rules**:
 
 ### ✅ Heading Rules (MD001-MD025)
+
 | Rule | Description | Auto-Fix |
 |------|-------------|----------|
 | MD001 | Heading levels increment | ✅ |
@@ -61,6 +65,7 @@ This toolkit handles **ALL 50 markdownlint rules**:
 | MD026 | No trailing punctuation in heading | ✅ |
 
 ### ✅ List Rules (MD004-MD007, MD029-MD032)
+
 | Rule | Description | Auto-Fix |
 |------|-------------|----------|
 | MD004 | Unordered list style | ✅ |
@@ -71,6 +76,7 @@ This toolkit handles **ALL 50 markdownlint rules**:
 | MD032 | Lists surrounded by blank lines | ✅ |
 
 ### ✅ Whitespace Rules (MD009-MD012)
+
 | Rule | Description | Auto-Fix |
 |------|-------------|----------|
 | MD009 | No trailing spaces | ✅ |
@@ -79,6 +85,7 @@ This toolkit handles **ALL 50 markdownlint rules**:
 | MD012 | No multiple consecutive blank lines | ✅ |
 
 ### ✅ Code Block Rules (MD014, MD031, MD040, MD046, MD048)
+
 | Rule | Description | Auto-Fix |
 |------|-------------|----------|
 | MD014 | Dollar signs in shell commands | ✅ |
@@ -88,6 +95,7 @@ This toolkit handles **ALL 50 markdownlint rules**:
 | MD048 | Code fence style | Config |
 
 ### ✅ Emphasis & Links (MD033-MD039, MD042, MD045)
+
 | Rule | Description | Auto-Fix |
 |------|-------------|----------|
 | MD033 | No inline HTML | Config |
@@ -100,12 +108,14 @@ This toolkit handles **ALL 50 markdownlint rules**:
 | MD045 | Images have alt text | ✅ |
 
 ### ✅ Blockquote Rules (MD027-MD028)
+
 | Rule | Description | Auto-Fix |
 |------|-------------|----------|
 | MD027 | Multiple spaces after blockquote | ✅ |
 | MD028 | Blank line inside blockquote | ✅ |
 
 ### ✅ Other Rules
+
 | Rule | Description | Auto-Fix |
 |------|-------------|----------|
 | MD013 | Line length | Config |
@@ -139,7 +149,9 @@ npm run fix:all
 ## 🔧 Smart Features
 
 ### Automatic Language Detection
+
 The toolkit intelligently detects code block languages:
+
 - Shell commands (bash)
 - JSON objects
 - JavaScript/TypeScript
@@ -150,7 +162,9 @@ The toolkit intelligently detects code block languages:
 - And more!
 
 ### Proper Name Capitalization
+
 Automatically fixes common proper names:
+
 - GitHub, JavaScript, TypeScript
 - Node.js, React, Vue, Angular
 - Docker, Kubernetes
@@ -160,22 +174,22 @@ Automatically fixes common proper names:
 ## 📊 Example Fixes
 
 ### Before
+
 ```markdown
 **Important Section**
-```
+
 some code
-```
+
 github project
 ![](image.png)
 ```
 
 ### After
+
 ```markdown
 ### Important Section
 
-```javascript
 some code
-```
 
 GitHub project
 ![Image](image.png)
@@ -197,8 +211,9 @@ Edit `.markdownlint.json` to adjust rules:
 ## 🚀 CI/CD Integration
 
 The toolkit includes GitHub Actions workflow for automated testing:
+
 - Runs on every push and PR
-- Checks all markdown files
+- Checks all Markdown files
 - Verifies formatting
 - Ensures compliance
 
