@@ -23,16 +23,16 @@
     "developer-tools",
     "automation"
   ],
-  "author": "Your Name",
+  "author": "Neoneue",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/markdown-toolkit.git"
+    "url": "git+https://github.com/Neoneue/markdown-toolkit.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/markdown-toolkit/issues"
+    "url": "https://github.com/Neoneue/markdown-toolkit/issues"
   },
-  "homepage": "https://github.com/yourusername/markdown-toolkit#readme",
+  "homepage": "https://github.com/Neoneue/markdown-toolkit#readme",
   "devDependencies": {
     "markdownlint-cli": "^0.47.0",
     "prettier": "^3.5.0",
