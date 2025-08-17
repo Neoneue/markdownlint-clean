@@ -189,16 +189,16 @@ npm run fix:all
 ### Programmatic Usage
 
 ```javascript
-const markdownlintClean = require('markdownlint-clean');
+const markdownlintClean = require("markdownlint-clean");
 
 // Set up in a project
-markdownlintClean.setup('/path/to/project');
+markdownlintClean.setup("/path/to/project");
 
 // Fix all errors
-markdownlintClean.fixAll('/path/to/project');
+markdownlintClean.fixAll("/path/to/project");
 
 // Run linting
-markdownlintClean.lint('/path/to/project', true); // true = auto-fix
+markdownlintClean.lint("/path/to/project", true); // true = auto-fix
 ```
 
 ## 🔧 Smart Features
