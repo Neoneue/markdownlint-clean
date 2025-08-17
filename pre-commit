@@ -1,0 +1,58 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# ================================================
+# Pre-commit Hook for Markdown Linting
+# ================================================
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+echo "${BLUE}🚀 Running pre-commit checks...${NC}"
+echo ""
+
+# Run lint-staged for automatic fixing
+echo "${YELLOW}📝 Running lint-staged...${NC}"
+npx lint-staged
+
+# Check the exit status
+if [ $? -ne 0 ]; then
+    echo ""
+    echo "${RED}❌ Pre-commit checks failed!${NC}"
+    echo "${YELLOW}Please fix the issues above and try again.${NC}"
+    exit 1
+fi
+
+# Optional: Run additional checks
+echo ""
+echo "${BLUE}🔍 Running additional checks...${NC}"
+
+# Check for large files
+echo "  Checking for large files..."
+find . -type f -size +1M ! -path "./node_modules/*" ! -path "./.git/*" ! -path "./dist/*" ! -path "./build/*" 2>/dev/null | while read -r file; do
+    echo "${YELLOW}  ⚠️  Warning: Large file detected: $file${NC}"
+done
+
+# Check for console.log in JavaScript/TypeScript files (optional)
+if command -v grep &> /dev/null; then
+    echo "  Checking for console.log statements..."
+    CONSOLE_COUNT=$(git diff --cached --name-only | grep -E '\.(js|jsx|ts|tsx)$' | xargs grep -n "console\.log" 2>/dev/null | wc -l)
+    if [ "$CONSOLE_COUNT" -gt 0 ]; then
+        echo "${YELLOW}  ⚠️  Warning: Found $CONSOLE_COUNT console.log statement(s)${NC}"
+    fi
+fi
+
+# Check for TODO comments (optional)
+echo "  Checking for TODO comments..."
+TODO_COUNT=$(git diff --cached --name-only | xargs grep -n "TODO" 2>/dev/null | wc -l)
+if [ "$TODO_COUNT" -gt 0 ]; then
+    echo "${YELLOW}  ℹ️  Info: Found $TODO_COUNT TODO comment(s)${NC}"
+fi
+
+echo ""
+echo "${GREEN}✅ Pre-commit checks passed!${NC}"
+echo ""
