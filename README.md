@@ -2,6 +2,9 @@
 
 A comprehensive, portable markdown linting toolkit that handles **ALL markdownlint errors (MD001-MD050)**. Achieve markdown compliance with automated fixes and pre-commit hooks.
 
+[![npm version](https://badge.fury.io/js/markdownlint-clean.svg)](https://www.npmjs.com/package/markdownlint-clean)
+[![npm downloads](https://img.shields.io/npm/dm/markdownlint-clean.svg)](https://www.npmjs.com/package/markdownlint-clean)
+
 ## 🚀 Quick Start
 
 ### Option 1: NPM Package (Recommended)
@@ -32,14 +35,14 @@ npx markdownlint-clean fix
 ### Option 3: Clone and Setup
 
 ```bash
-git clone https://github.com/Neoneue/markdown-toolkit.git
-./markdown-toolkit/setup.sh
+git clone https://github.com/Neoneue/markdownlint-clean.git
+./markdownlint-clean/setup.sh
 ```
 
 ### Option 4: One-Command Setup
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/Neoneue/markdown-toolkit/main/setup.sh | bash
+curl -sSL https://raw.githubusercontent.com/Neoneue/markdownlint-clean/main/setup.sh | bash
 ```
 
 ## 📋 What's Included
